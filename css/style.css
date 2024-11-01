@@ -1,0 +1,67 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.table {
+    background-color: white;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.btn {
+    margin-right: 5px;
+}
+
+.alert {
+    margin-top: 20px;
+}
+/* Animasi dan Efek Hover */
+.table {
+    transition: all 0.3s ease-in-out;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn {
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover, .btn-warning:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+/* Animasi untuk modal */
+.modal-content {
+    animation: slide-in 0.5s ease-out;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
